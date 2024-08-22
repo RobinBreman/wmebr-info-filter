@@ -5,7 +5,7 @@
 // @author          Robin Breman | L4 Waze NL | @robbre | https://github.com/RobinBreman/wmebr-info-filter
 // @match           https://wmebr.info/ur/*
 // @grant 			none
-// @version 		0.0.1
+// @version 		1.0.0
 // ==/UserScript==
 
 (function () {
@@ -16,7 +16,7 @@
     function hideRows() {
 
         console.log('wmebr-info filter is hiding rows ...');
-        
+
         document.querySelectorAll('td').forEach(function(td) {
             if (td.textContent.includes('evcs feed')) {
               td.parentElement.style.display = 'none';
